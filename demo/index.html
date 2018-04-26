@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ECharts</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+
+	<script type="text/javascript">
+		window.EC_DEMO_LANG='cn';
+	</script>
+	<script type="text/javascript" src="js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/loadsh/lodash.js"></script>
+	<script type="text/javascript" src="js/waypoint.js"></script>
+
+</head>
+<body>
+	<div class="header">
+		<div class="nav-header">
+			<a href="http://echarts.baidu.com/index.html">
+				<img class="navbar-logo" src="images/logo.png" alt="echarts logo" >
+			</a>
+		</div>
+	</div>
+	<div class="left-nav">
+		<ul>
+			<li>
+				<a class="chart-line" href="#line"><span class="icon"></span><span class="name">Line</span></a>
+			</li>
+			<li>
+				<a class="chart-bar" href="#bar"><span class="icon"></span><span class="name">Bar</span></a>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div id="toolbar">
+            <div id="theme"><span>Theme:</span><a href="./index.html" title="default" class="default"><span></span></a><a href="./index.html?theme=light" title="light" class="light"><span></span></a><a href="./index.html?theme=dark" title="dark" class="dark"><span></span></a></div>
+        </div>
+		<div class="chart-panel">
+			<h3 class="chart-header" id="line">Line</h3>
+			<div class="chart-row-line">
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=line-simple">
+							<h4 class="chart-title">Basic Line Chart</h4>
+							<img class="chart-area" src="images/thumb/line-simple.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=area-basic">
+							<h4 class="chart-title">Basic area chart</h4>
+							<img class="chart-area" src="images/thumb/area-basic.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=line-smooth">
+							<h4 class="chart-title">Smoothed Line Chart</h4>
+							<img class="chart-area" src="images/thumb/line-smooth.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=erea-stack">
+							<h4 class="chart-title">Stacked area chart</h4>
+							<img class="chart-area" src="images/thumb/area-stack.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=line-stack">
+							<h4 class="chart-title">line-stack.png</h4>
+							<img class="chart-area" src="images/thumb/line-stack.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=area-rainfall">
+							<h4 class="chart-title">Rainfall</h4>
+							<img class="chart-area" src="images/thumb/area-rainfall.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=erea-simple">
+							<h4 class="chart-title">Large scale area chart</h4>
+							<img class="chart-area" src="images/thumb/area-simple.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=confidence-band">
+							<h4 class="chart-title">Confidence Band</h4>
+							<img class="chart-area" src="images/thumb/confidence-band.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			<h3 class="chart-header" id="bar">Bar</h3>
+			<div class="chart-row-line">
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=bar-animation-delay">
+							<h4 class="chart-title">柱状图动画延迟</h4>
+							<img class="chart-area" src="images/thumb/bar-animation-delay.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=bar-brush">
+							<h4 class="chart-title">柱状图框选</h4>
+							<img class="chart-area" src="images/thumb/bar-brush.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=bar-gradient">
+							<h4 class="chart-title">特性示例：渐变色 阴影 点击缩放</h4>
+							<img class="chart-area" src="images/thumb/bar-gradient.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=bar-label-rotation">
+							<h4 class="chart-title">Bar Label Rotation</h4>
+							<img class="chart-area" src="images/thumb/bar-label-rotation.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=bar-negative">
+							<h4 class="chart-title">正负条形图</h4>
+							<img class="chart-area" src="images/thumb/bar-negative.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=bar-negative2">
+							<h4 class="chart-title">交错正负轴标签</h4>
+							<img class="chart-area" src="images/thumb/bar-negative2.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=bar-polar-real-estate">
+							<h4 class="chart-title">极坐标系下的堆叠柱状图</h4>
+							<img class="chart-area" src="images/thumb/bar-polar-real-estate.png">
+						</a>
+					</div>
+				</div>
+				<div class="chart-list-line">
+					<div class="chart">
+						<a class="chart-link" target="_blank" href="edit.html?c=bar-polar-stack">
+							<h4 class="chart-title">极坐标系下的堆叠柱状图</h4>
+							<img class="chart-area" src="images/thumb/bar-polar-stack.png">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/base.js"></script>
+</body>
+</html>
